@@ -1,0 +1,134 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    tools:context=".EvaluateActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/evaluatedImageView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/amier"
+                android:contentDescription="@string/lecturer_image_description"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/evaluatedNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/evaluatedImageView"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Dr. Amier"
+                android:textColor="@android:color/black"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/question1TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/evaluatedNameTextView"
+                android:layout_marginTop="16dp"
+                android:text="Question 1: Rate the lecturer's knowledge"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_centerHorizontal="true"/>
+
+            <Spinner
+                android:id="@+id/ratingSpinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question1TextView"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:entries="@array/rating_array"
+                android:minHeight="48dp"
+                android:prompt="@string/rating_prompt" />
+
+            <TextView
+                android:id="@+id/question2TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ratingSpinner1"
+                android:layout_marginTop="16dp"
+                android:text="Question 2: Rate the lecturer's presentation skills"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_centerHorizontal="true"/>
+
+            <Spinner
+                android:id="@+id/ratingSpinner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question2TextView"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:entries="@array/rating_array"
+                android:minHeight="48dp"
+                android:prompt="@string/rating_prompt" />
+
+            <TextView
+                android:id="@+id/question3TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ratingSpinner2"
+                android:layout_marginTop="16dp"
+                android:text="Question 3: Rate the lecturer's interaction with students"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_centerHorizontal="true"/>
+
+            <Spinner
+                android:id="@+id/ratingSpinner3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question3TextView"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:entries="@array/rating_array"
+                android:minHeight="48dp"
+                android:prompt="@string/rating_prompt" />
+
+            <EditText
+                android:id="@+id/feedbackEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ratingSpinner3"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/feedback_hint"
+                android:inputType="textMultiLine"
+                android:minHeight="96dp" />
+
+            <Button
+                android:id="@+id/submitEvaluationButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/feedbackEditText"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/submit_button"
+                android:onClick="submitEvaluation"
+                android:background="@color/lavender"
+                tools:ignore="OnClick" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+
+    <resources>
+        <color name="colorPrimary">#233BB1</color>
+        <color name="colorPrimaryDark">#030F49</color>
+        <color name="colorAccent">#42C6C2</color>
+        <color name="background">#D7DCF8</color>
+        <color name="lavender">#8692f7</color>
+        <color name="white">#ffff</color>
+        <color name="purple">#A020F0</color>
+        <color name="black">#000000</color>
+    </resources>
+

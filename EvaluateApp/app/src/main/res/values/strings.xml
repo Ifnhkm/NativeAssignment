@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LecturerEvaluationApp</string>
+    <string name="rating_dialog_title">Rate Lecturer</string>
+    <string name="rating_dialog_message">Please provide your rating:</string>
+    <string name="add_lecturer_hint">Add a new lecturer</string>
+    <string name="add_lecturer_positive_button">Add</string>
+    <string name="add_lecturer_negative_button">Cancel</string>
+    <string name="lecturer_image_description">Lecturer Image</string>
+    <string name="feedback_hint">Leave your feedback here</string>
+    <string name="title_activity_evaluate">Evaluate Lecturer</string>
+    <string name="rating_prompt">Select a rating</string>
+    <string name="submit_button">Submit</string>
+</resources>

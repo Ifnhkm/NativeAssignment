@@ -1,0 +1,8 @@
+<!-- res/drawable/ic_default_lecturer.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="@android:color/darker_gray" />
+    <size
+        android:width="50dp"
+        android:height="50dp" />
+</shape>

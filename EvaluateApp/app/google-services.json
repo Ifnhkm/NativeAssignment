@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "283870568568",
+    "project_id": "evaluateapp-824d2",
+    "storage_bucket": "evaluateapp-824d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283870568568:android:3088b98d5fcaeb93100d8d",
+        "android_client_info": {
+          "package_name": "com.example.evaluateapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpfroe1JDa3rL8VDLPG_szyy41jjOVLoU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
